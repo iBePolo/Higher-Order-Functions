@@ -1,0 +1,37 @@
+/*
+An attempt at a higher order function and closure. The first function, skyColor, is used to calculate the answer
+ to a trivia question. The second function, jokeyWokey, presents the trivia question and returns a message to the 
+ user via an anonymous function.
+*/
+
+var skyColor = function () {
+    var answerHolder = [];
+    var greeting = "I am sorry, ";
+    var correctAnswer = "blue";
+    var judgesSay = "incorrect";
+    var userAnswer = prompt("What color is a blue sky?", "Enter your answer here?");
+    if (userAnswer === correctAnswer) {
+        judgesSay = "correct";
+        greeting = "Congratulations, ";
+    }
+
+    answerHolder.push(judgesSay, userAnswer, greeting);
+    return answerHolder;
+};
+
+
+
+
+var jokeyWokey = function (joke) {
+    var judge = joke();
+
+    function b() {
+        console.log(judge[2] + judge[1] + " is the " + judge[0] + " answer!");
+    }
+    var c = b();
+    return c;
+
+
+};
+
+jokeyWokey(skyColor);
