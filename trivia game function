@@ -1,5 +1,5 @@
 /*
-An attempt at a higher order function and closure. The first function, skyColor, is used to calculate the answer
+An attempt at a higher-order function and closure. The first function, skyColor, is used to calculate the answer
  to a trivia question. The second function, jokeyWokey, presents the trivia question and returns a message to the 
  user via an anonymous function.
 */
