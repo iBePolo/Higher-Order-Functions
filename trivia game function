@@ -9,13 +9,15 @@ var skyColor = function () {
     var greeting = "I am sorry, ";
     var correctAnswer = "blue";
     var judgesSay = "incorrect";
+    var sentenceEnd = "."
     var userAnswer = prompt("What color is a blue sky?", "Enter your answer here?");
     if (userAnswer === correctAnswer) {
         judgesSay = "correct";
         greeting = "Congratulations, ";
+        sentenceEnd = "!";
     }
 
-    answerHolder.push(judgesSay, userAnswer, greeting);
+    answerHolder.push(greeting, userAnswer, judgesSay, sentenceEnd);
     return answerHolder;
 };
 
@@ -26,7 +28,7 @@ var jokeyWokey = function (joke) {
     var judge = joke();
 
     function b() {
-        console.log(judge[2] + judge[1] + " is the " + judge[0] + " answer!");
+        console.log(judge[0] + judge[1] + " is the " + judge[2] + " answer" + judge[3]);
     }
     var c = b();
     return c;
