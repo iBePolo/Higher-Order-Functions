@@ -42,8 +42,8 @@ var triviaFunc = function (question) {
 
 };
 
-
 triviaFunc(skyColor);
+
 
 /*
 I think it's important to note that I am not able to call the results to this function by the following means:

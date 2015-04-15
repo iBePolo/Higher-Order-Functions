@@ -11,7 +11,7 @@ var skyColor = function () {
     var greeting = "I am sorry, ";
     var correctAnswer = "blue";
     var judgesSay = "incorrect";
-    var sentenceEnd = "."
+    var sentenceEnd = ".";
     var userAnswer = prompt("What color is a blue sky?", "Enter your answer here?");
     if (userAnswer === correctAnswer) {
         judgesSay = "correct";
@@ -42,17 +42,16 @@ var triviaFunc = function (question) {
 
 
 var g = triviaFunc(skyColor);
-
+g();
 
 /*
 One thing I noted is that, to call the result, I had to assign the function to a variable 
 and then call the variable alomg with () after it.
 */
-g();
+
 /*Calling just "g;" by itself returns ---> "function b()" but calling ---> "g();" returns 
 (using blue & green as examples for the answer entered when "var g = triviaFunc(skyColor);" was called.)
 "Congratulations, blue is the correct answer!" or "I am sorry, green is the incorrect answer." 
-
 
 */
 /* So, "var g = triviaFunc(skyColor);" assigns the value & the function to the 
