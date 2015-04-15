@@ -15,7 +15,7 @@ var skyColor = function () {
     var greeting = "I am sorry, ";
     var correctAnswer = "blue";
     var judgesSay = "incorrect";
-    var sentenceEnd = "."
+    var sentenceEnd = ".";
     var userAnswer = prompt("What color is a blue sky?", "Enter your answer here?");
     if (userAnswer === correctAnswer) {
         judgesSay = "correct";
