@@ -3,11 +3,12 @@ An attempt at a higher-order function and closure. The first function, skyColor,
  to a trivia question. The second function, triviaFunc, presents the trivia question and returns a message to the 
  user via an anonymous function.
 
- Note: After creating this function, I learned that, in this function, I am not actually "returning" a function so
+Note: After creating this function, I learned that, in this function, I am not actually "returning" a function so
  I wrote a new one with a return of function b from within the triviaFunc function. This new execise helped me
  understand that there are nuances when it comes to code. I don't fully understand them yet but am glad that I was
  able to come across the prolem. The second version is called "Trivia Game Function w/Function Return"
 */
+
 
 var skyColor = function () {
     var answerHolder = [];
