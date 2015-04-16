@@ -104,7 +104,7 @@ var a = function(x) {
 	console.log(x);
 };
 
-a(runAdditionAndTimesTen());
+a(runAdditionAndTimesTen());  // Returns ---> 40, VM57:3 undefined, undefined
 
 
 
