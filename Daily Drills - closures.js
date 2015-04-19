@@ -35,7 +35,14 @@ var userFirstName = function () {
 	
 	// So this time I am just returning the name of an existing function. Similar to using sonsole.log or alert(), I think.
 	// I don't exactly know why this might be preferable at times so I will have to try and keep it on the back burner.
-	return m(userName);
+	return m(userName); // <--- So if I execute an existing function from within this function does it mean it's not a callback?(4/19/15)
+	/*
+	I think that the answer to my above comment s no because the holding function does not have the "m" function as a
+	function definition(meaning tha the function is not explained/written out). It exists as it would when it is invoked. I
+	am not 100% sure what the answer is yet but I am pretty sure that it's still an example of colsure since it's using the
+	"userName" variable and the "m" function both which were created & live outside of the holding function.
+
+	*/
 };
 
 
