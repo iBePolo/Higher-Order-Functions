@@ -46,7 +46,12 @@ var h = userFirstName(userName); // <--- undefined
 h(); // ---> Uncaught TypeError: h is not a function
 
 /*
-I think that the reason that "h;" without parens returns the value this time is because, since in the userFirstName function we are returning a value, when we assign "h" the value of userFirstName(userName) -  We are assigning the value that is returned. In this case we aren't returning a function. We are returning a value. This means that h does not have to be called w/parens because the value that was returned from the userFirstName function is not a function. So "h" does not need to be called as a function because it is not one. It is a string which means that all we have to do to call it is type ---> h;
+I think that the reason that "h;" without parens returns the value this time is because, since in the userFirstName 
+function we are returning a value, when we assign "h" the value of userFirstName(userName) -  We are assigning the 
+value that is returned. In this case we aren't returning a function. We are returning a value. This means that h does 
+not have to be called w/parens because the value that was returned from the userFirstName function is not a function. 
+So "h" does not need to be called as a function because it is not one. It is a string which means that all we have to 
+do to call it is type ---> h;
 */
 h; // ---> "Today is Sat Apr 18 2015 22:23:15 GMT-0400 (EDT). Is there anything else I can help you with today, Marco?"
 
