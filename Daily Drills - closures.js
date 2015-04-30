@@ -1,6 +1,60 @@
 // This for file is for practicinf closures
 
 ************************************************************************************
+var currentGreeting = "Hello"
+var userName = prompt("What is your name?");
+var gameBeingPlayed = prompt("What game would you like to play?").toLowerCase();
+
+
+function communicate (person, greeting) {
+    
+    return function () {
+        return greeting + ", " + person + "! Would you like to join us for a game of " + gameBeingPlayed.toLowerCase() + "?"; 
+    
+        }
+
+}
+
+var f = communicate(userName, currentGreeting);
+
+f();
+
+************************************************************************************
+function actions (arrayName, actionToTake) {
+    actionToTake(arrayName);
+
+}
+
+
+function logger (x) {
+    for (var i = 0; i < x.length; i++)
+        console.log(x[i]);
+
+}
+
+var a = [1, 2, 3, 4];
+
+actions(a, logger);
+
+************************************************************************************
+var userName = prompt("What is your first name?");
+
+
+var giveUserDate = function () {
+    return function () {
+    return "Today is " + Date() + ". Is there anything else I can help you with, " + userName;
+    }
+
+
+}
+
+giveUserDate();
+
+var f = giveUserDate();
+
+f();
+
+************************************************************************************
 // The code below this one is very similar. They both access a variable outside of itself, in different places.
 // The inner function is accessing the global variable, "userName".
 var userName = prompt("Please enter your first name."); // <--- Entered "Howard"
