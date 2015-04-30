@@ -57,6 +57,27 @@ eachItem(newArr, function (x) {console.log(x);}); // <--- Hello, Goodbye & undef
 
 ************************************************************************************
 
+
+var forEach = function (item, action) {
+	return action(item); // <--- It's very important to return the value!!! This same code won't work without the "return" keyword!
+};
+
+
+
+var f = forEach(2, function(x) {return x * 2;}); // ---> 4
+
+
+/*
+This code will not work without the "return" keyword. The only difference between the following code and
+the original(above) is the "return" keyword. It won't work without it.
+*/
+var forEach = function (item, action) {
+	action(item); // <--- This code will not work without "return"
+};
+
+var f = forEach(2, function(x) {return x * 2;});
+
+
 ************************************************************************************
 
 ************************************************************************************
